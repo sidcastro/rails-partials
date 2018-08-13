@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EventTracker</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
+
+<body>
+  <header>
+    <ul class="navbar">
+      <%= render "layouts/menu_list" %>
+    </ul>
+  </header>
+  <section id="main">
+    <%= yield %>
+  </section>
+  <section id="sidebar"></section>
+  <footer>
+    <%= render "layouts/menu_list" %>
+  </footer>
+</body>
+</html>
