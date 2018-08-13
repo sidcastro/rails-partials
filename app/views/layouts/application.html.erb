@@ -12,12 +12,15 @@
   <header>
     <ul class="navbar">
       <%= render "layouts/menu_list" %>
+      <%= render "layouts/flash" %>
     </ul>
   </header>
   <section id="main">
     <%= yield %>
   </section>
-  <section id="sidebar"></section>
+  <section id="sidebar">
+      <%= render "layouts/sidebar" %>
+  </section>
   <footer>
     <%= render "layouts/menu_list" %>
   </footer>
